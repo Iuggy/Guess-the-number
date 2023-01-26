@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adivinhe o Numero</title>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Lobster+Two:ital@1&display=swap');
+      </style>
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen"/>
+</head>
+<body>
+    <h1>Adivinhe o Número</h1>
+    <p>Número aleatórios entre 1 e 100 foram selecionados. Veja se consegue adivinhar em 10 chances ou menos. Nós lhe diremos se seu palpite está com valor alto ou baixo.</p>
+    <div class="form">
+        <label for="guessField">Envie um palpite: </label>
+        <input type="number" min="1" max="100" required id="campoEntrada" class="campoEntrada">
+        <input type="submit" value="Enviar Palpite" id='enviaPalpite'class="enviaPalpite">
+      </div>
+  
+      <div class="resultParas">
+        <p class="palpites" id="palpites"></p>
+        <p class="ultimoResultado" id="ultimoResultado"></p>
+        <p class="altoBaixo" id="altoBaixo"></p>
+      </div>
+      
+      <script src="script.js"></script>
+</body>
+</html>
+
